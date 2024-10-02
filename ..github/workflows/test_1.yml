@@ -7,5 +7,4 @@ jobs: #Ejecuta dentro de un servidor
     runs-on: ubuntu-latest #Directiva 
     steps: #Definir los Steps, que realza diferentes acciones, siendo esta la unidad mas peque. 
       - uses: actions/checkout@v4
-      - name: Hola Mundo
       - run: echo "Hola Mundo" #Directiva run que permite correr un comnando, run define la acción 
