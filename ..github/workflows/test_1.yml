@@ -2,12 +2,10 @@ name: Hola Mundo #Nombre de workflow
 
 on: [push] #Evento, se hace push a un al repo
 
-job: #Ejecuta dentro de un servidor
+jobs: #Ejecuta dentro de un servidor
   hola: 
     runs-on: ubuntu-latest #Directiva 
-
-    #Definir los Steps, que realza diferentes acciones, siendo esta la unidad mas peque. 
-    steps: 
+    steps: #Definir los Steps, que realza diferentes acciones, siendo esta la unidad mas peque. 
+      - uses: actions/checkout@v4
       - name: Hola Mundo
-        run: echo "Hola Mundo" #Directiva run que permite correr un comnando, run define la acción 
-
+      - run: echo "Hola Mundo" #Directiva run que permite correr un comnando, run define la acción 
