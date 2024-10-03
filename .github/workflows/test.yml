@@ -10,7 +10,7 @@ jobs:
     - name: Hola
       run: echo "Hola MUUNDO2"
 
-other: 
+  other: 
     runs-on: ubuntu-latest
 
     steps: 
