@@ -6,7 +6,6 @@ jobs:
   hola:
     runs-on: ubuntu-latest
 
-    stepes:
+    steps:
     - main: Hola Mundo
       run: echo "Hola MUUNDO2"
-      
