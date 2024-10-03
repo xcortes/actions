@@ -1,0 +1,12 @@
+name: Hola MUNDO2
+
+on: [push]
+
+jobs: 
+  hola:
+    runs-on: ubuntu-latest
+
+    stepes:
+    - main: Hola Mundo
+      run: echo "Hola MUUNDO2"
+      
