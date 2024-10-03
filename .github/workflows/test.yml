@@ -15,4 +15,4 @@ jobs:
 
     steps: 
       - name: LS
-        run: echo "Hola MUNDO2 - test.yml"
+        run: ls -al
