@@ -2,11 +2,11 @@ name: Hola MUNDO2
 
 on: [push]
 
-jobs: 
+jobs:  #Jobs
   hola:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: #Steps, pasos
     - name: Hola
       run: echo "Hola MUUNDO2"
 
@@ -21,7 +21,8 @@ jobs:
 
   other: 
     runs-on: ubuntu-latest
-
+    needs: hola #Directiva dependencia de ejecución, pasando el job que necesito que se ejecute y terrmine para proceder a ejecutar 
+                # Tambien se puede definir como un arreglo [hola]    
     steps: 
       - name: LS
         run: ls -al
