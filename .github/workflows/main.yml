@@ -2,10 +2,10 @@ name: Test
 
 on: [push]
 
-  jobs:
-    test-build: 
-      runs-on: ubuntu-latest
+jobs:
+  test-build: 
+    runs-on: ubuntu-latest
   # Como ejecutar comnados
-      steps:
+    steps:
       - name: ls
         run: ls -al
