@@ -1,6 +1,15 @@
 name: Hola MUNDO2
 
-on: [push, pull_request]
+on:
+  push:
+    branch: #Defino que este workflow se ejecute en esta lista de branch
+      - main
+  # También funciona con PR
+  # Este workflow se va a ejecutar cuando se haga push a la branch m ain
+  # Como tambien se haga un PR a la rama main
+  pull_request:
+    branch:
+      - main
 
 jobs:  #Jobs
   hola:
