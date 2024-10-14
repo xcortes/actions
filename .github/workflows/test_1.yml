@@ -33,5 +33,7 @@ jobs:  #Jobs
     needs: hola #Directiva dependencia de ejecución, pasando el job que necesito que se ejecute y terrmine para proceder a ejecutar 
                 # Tambien se puede definir como un arreglo [hola]    
     steps: 
+      - name: Checkout
+        uses: actions/checkout@v4.2.1    
       - name: LS
         run: ls -al
