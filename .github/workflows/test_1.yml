@@ -10,7 +10,7 @@ jobs:  #Jobs
     - name: Hola
       run: echo "Hola MUUNDO2"
 
-    - name: Touch file
+    - name: touch file
       run: touch hola.txt
     
     - name: Set text
