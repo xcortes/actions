@@ -8,4 +8,6 @@ jobs:
   # Como ejecutar comnados
     steps:
       - name: ls
-        run: ls -al
+        run: | # Pie permite generar string multilinea
+          echo : "Hola Mundo desde main.yml" >> hola.txt
+          cat hola.txt
