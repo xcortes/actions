@@ -1,28 +1,12 @@
-name: Hola MUNDO2
+name: Hola Mundo #Nombre de workflow
 
-on: [push]
+on: #[push] #Evento, se hace push a un al repo
+  workflow_dispatch
 
-jobs:  #Jobs
-  hola:
-    runs-on: ubuntu-latest
-
-    steps: #Steps, pasos
-    - name: Hola
-      run: echo "Hola MUUNDO2"
-
-    - name: Touch file
-      run: touch hola.txt
-    
-    - name: Set text
-      run: echo "Hola Mundote" >> hola.txt
-    
-    - name: Read file
-      run: cat hola.txt
-
-  other: 
-    runs-on: ubuntu-latest
-    needs: hola #Directiva dependencia de ejecución, pasando el job que necesito que se ejecute y terrmine para proceder a ejecutar 
-                # Tambien se puede definir como un arreglo [hola]    
-    steps: 
-      - name: LS
-        run: ls -al
+jobs: #Ejecuta dentro de un servidor
+  hola: 
+    runs-on: ubuntu-latest #Directiva 
+    steps: #Definir los Steps, que realza diferentes acciones, siendo esta la unidad mas peque. 
+      - name: Hola Mundo #Nombre representativo
+      - run: echo "Hola Mundo" #Directiva run que permite correr un comnando, run define la acción 
+      
