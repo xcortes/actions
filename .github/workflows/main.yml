@@ -14,9 +14,16 @@ jobs:
 
       - name: Setup Node.js environment #Configuración node
         uses: actions/setup-node@v4.0.4
-        with:
-          node-version: lastest
+        #with: #Error no se encuentra en el manifiesto 
+         #node-version: lastest
       
       - name: Node version # Setea node
         run: node --version #Da la versión de node
+      
+      - name: PHP #Setear PHP
+        uses: shivammathur/setup-php@v2
+          whit:   
+            php-version: "8.3"
+      - name: Version PHP
+        run: php --version
      
