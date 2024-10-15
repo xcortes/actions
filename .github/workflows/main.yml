@@ -11,9 +11,9 @@ jobs:
         uses: actions/checkout@v4.2.1
        
       - name: ls
-    #comando chmod +x es permisos de ejcución
-    #./scrit.sh Ejecuta dicho script
-        run: | # Para utilizar el scrip
+        run: |
           chmod +x script.sh
           ./script.sh 
-
+# | Para utilizar el scrip
+#comando chmod +x es permisos de ejcución
+#./scrit.sh Ejecuta dicho script
