@@ -22,7 +22,7 @@ jobs:
       
       - name: PHP #Setear PHP
         uses: shivammathur/setup-php@v2
-          whit:   
+          with:   
             php-version: "8.3"
       - name: Version PHP
         run: php --version
