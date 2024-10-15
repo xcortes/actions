@@ -1,5 +1,6 @@
 name: Test
 
+<<<<<<< HEAD
 on: push
 
 jobs:
@@ -9,3 +10,16 @@ jobs:
     steps:
     - name: ls
       run: ls -al
+=======
+on: [push]
+
+jobs:
+  test-build: 
+    runs-on: ubuntu-latest
+  # Como ejecutar comnados
+    steps:
+      - name: ls
+        run: | # Pie permite generar string multilinea
+          echo : "Hola Mundo desde main.yml" >> hola.txt
+          cat hola.txt
+>>>>>>> refs/remotes/origin/main
