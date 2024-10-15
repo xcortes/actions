@@ -11,15 +11,9 @@ jobs:
         uses: actions/checkout@v4.2.1
       - name: Listar ls -l
         run: ls -l
-      - name: Archivo script.sh
-        run: |
-          chmod +x script.sh
-          ./script.sh
-       
-      #- name: ls
-      #  run: |
-       #   chmod +x script.sh
-        #  ./script.sh 
-# | Para utilizar el scrip
-#comando chmod +x es permisos de ejcución
-#./scrit.sh Ejecuta dicho script
+
+      - name: Setup Node.js environment #Configuración node
+        uses: actions/setup-node@v4.0.4
+      
+      - name: Node version # Setea node
+        run: node --version #Da la versión de node
