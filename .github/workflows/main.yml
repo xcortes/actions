@@ -22,9 +22,9 @@ jobs:
       
       - name: PHP #Setear PHP
         uses: shivammathur/setup-php@v2
-          with:
-            php-version: '8.3' 
-            
+          #with: #Genera error de sintaxys
+            #php-version: '8.3' 
+
           #with:   
             #php-version: "8.3" # No funciona
       - name: Version PHP
