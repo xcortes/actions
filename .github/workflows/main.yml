@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.1
       - name: LS
-        run: ls -al
+        run: ls -l
        
       #- name: ls
       #  run: |
