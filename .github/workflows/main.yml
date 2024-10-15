@@ -13,10 +13,10 @@ jobs:
       - name: Listar archivos LS -l
         run: ls -l
        
-      - name: ls
-        run: |
-          chmod +x script.sh
-          ./script.sh 
+      #- name: ls
+      #  run: |
+       #   chmod +x script.sh
+        #  ./script.sh 
 # | Para utilizar el scrip
 #comando chmod +x es permisos de ejcución
 #./scrit.sh Ejecuta dicho script
