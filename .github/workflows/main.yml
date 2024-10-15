@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.1
+      
+      - name: Listar archivos LS -l
+        run: ls -l
        
       - name: ls
         run: |
