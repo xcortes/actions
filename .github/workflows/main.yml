@@ -12,7 +12,7 @@ jobs:
       - name: Listar ls -l
         run: ls -l
       - name: Archivo script.sh
-        rub: |
+        run: |
           chmod +x scrip.sh
           ./script.sh
        
