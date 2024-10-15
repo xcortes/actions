@@ -1,16 +1,5 @@
 name: Test
 
-<<<<<<< HEAD
-on: push
-
-jobs:
-  test-build:
-    runs-on: ubuntu-latest
-    # Como poder ejecutar comandos
-    steps:
-    - name: ls
-      run: ls -al
-=======
 on: [push]
 
 jobs:
@@ -18,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
   # Como ejecutar comnados
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.1
+       
       - name: ls
-        run: | # Pie permite generar string multilinea
-          echo : "Hola Mundo desde main.yml" >> hola.txt
-          cat hola.txt
->>>>>>> refs/remotes/origin/main
+    #comando chmod +x es permisos de ejcución
+    #./scrit.sh Ejecuta dicho script
+        run: | # Para utilizar el scrip
+          chmod +x script.sh
+          ./script.sh 
+
