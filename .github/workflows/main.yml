@@ -29,4 +29,8 @@ jobs:
             #php-version: "8.3" # No funciona
       - name: Version PHP
         run: php --version
+
+      - name: Importar action - reusable
+        uses: ./.github/actions/my-action
+
      

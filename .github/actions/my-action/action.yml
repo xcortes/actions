@@ -1,0 +1,10 @@
+name: "My action"
+descriptions: "Test My Actions"
+
+runs: #Directiva
+  using: "composite" #Primer parametro, acciones de tipo composite permite agrupar pasos comunes, como lo son lo steps para reutilizar en los diferentes wf
+
+  steps:
+    - name: Hola Mundo
+      run: "Hola Mundo desde My Action"
+
