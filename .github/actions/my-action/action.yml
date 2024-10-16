@@ -6,6 +6,6 @@ runs: #Directiva
 
   steps:
     - name: Hola Mundo
-      run: "Hola Mundo desde My Action"
+      run:  echo "Hola Mundo desde My Action"
       shell: bash #Se especifica que estos comandos son interpretados por bash shell
 
