@@ -15,6 +15,6 @@ jobs:
         ports:
         - 3306:3306
     
-    steps: 
-    - name: Test Servicio MySQL
-    run: ls
+    steps:
+      - name: Test Servicio MySQL
+      run: ls
