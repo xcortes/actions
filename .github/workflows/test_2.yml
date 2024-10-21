@@ -6,7 +6,6 @@ jobs:
   say-hello: 
     runs-on: ubuntu-latest
 
-
     services: #Servicios
       mysql:
         image: mysql:5.7 #Versión
@@ -14,7 +13,6 @@ jobs:
           MYSQL_ROOT_PASSWORD: example #Variable de entorno
         ports:
         - 3306:3306
-    
     steps:
       - name: Test Servicio MySQL
-      run: ls
+        run: ls
