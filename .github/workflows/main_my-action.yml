@@ -12,3 +12,5 @@ jobs:
       
       - name: Importar action - reusable
         uses: ./.github/actions/my-action
+        with: #Pasar el parametro de la acción, inuts
+          message: Fernando # El nombre de la variable y el valor 

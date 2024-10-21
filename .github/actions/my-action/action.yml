@@ -1,11 +1,19 @@
 name: "My action"
 descriptions: "Test My Actions"
 
+inputs: #Directiva
+  message: #Nobre de parametro
+    description: "The message to print" #Directiva, Que hace este parametro
+      required: true # Si va a ser requerido
+        default: "Hola"
+
+
 runs: #Directiva
   using: "composite" #Primer parametro, acciones de tipo composite permite agrupar pasos comunes, como lo son lo steps para reutilizar en los diferentes wf
 
   steps:
     - name: Hola Mundo
-      run:  echo "Hola Mundo desde My Action"
+      #run:  echo "Hola Mundo desde My Action" #Para implementar la ref del parametro
+      run: echo "Hola ${{ inputs.message}}" #Se hace referencia hacia el parametro, contexto
       shell: bash #Se especifica que estos comandos son interpretados por bash shell
 
