@@ -2,7 +2,7 @@ name: Ejemplo2 de Composite Actions
 
 on: [push]
 
-job:
+jobs:
   say-hello: 
     runs-on: ubuntu-latest
 
