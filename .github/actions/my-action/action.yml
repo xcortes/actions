@@ -4,8 +4,8 @@ descriptions: "Test My Actions"
 inputs: #Directiva
   message: #Nobre de parametro
     description: "The message to print" #Directiva, Que hace este parametro
-      required: true # Si va a ser requerido
-        default: "Hola"
+    required: true #Si va a ser requerido
+    default: "Hola"
 
 
 runs: #Directiva
