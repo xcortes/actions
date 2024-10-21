@@ -13,3 +13,8 @@ job:
           MYSQL_ROOT_PASSWORD: example #Variable de entorno
         ports:
         - 3306:3306
+    
+    steps: 
+    - name: Test Servicio MySQL
+    run: LS
+    
