@@ -1,4 +1,4 @@
-name: Ejemplo de Composite Actions
+name: Ejemplo2 de Composite Actions
 
 on: [push]
 
@@ -16,5 +16,4 @@ job:
     
     steps: 
     - name: Test Servicio MySQL
-    run: LS
-    
+    run: ls
