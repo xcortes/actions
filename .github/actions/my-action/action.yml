@@ -14,6 +14,6 @@ runs: #Directiva
   steps:
     - name: Hola Mundo
       #run:  echo "Hola Mundo desde My Action" #Para implementar la ref del parametro
-      run: echo "Hola ${{ inputs.message}}" #Se hace referencia hacia el parametro, contexto
+      run: echo "Holaa ${{ inputs.message}}" #Se hace referencia hacia el parametro, contexto
       shell: bash #Se especifica que estos comandos son interpretados por bash shell
 
