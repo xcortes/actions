@@ -11,4 +11,4 @@ jobs:
 
     steps: 
     - name: Test_Variable
-      run: echo "El Valor es:${{ env.MY_VAR }}" # Accede correctamente a la variable de entorno
+      run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno
