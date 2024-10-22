@@ -7,7 +7,7 @@ jobs:
     runns-on: ubuntu-latest 
 
     env:
-    MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests
+      MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests
 
     steps: 
     - name: Test_Variable
