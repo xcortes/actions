@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   hi-variablee:
-    runns-on: ubuntu-latest 
+    runs-on: ubuntu-latest 
 
     env:
       MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests
 
     steps: 
     - name: Test_Variable
-      run:echo "Valor: $$MY_VAR"
+      run: echo "Valor: $$MY_VAR"
