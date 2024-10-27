@@ -8,7 +8,7 @@ jobs:
     env: #Varialesd entorno 
           plataform: AWS
           region: us-east-1
-          accout: 1234567890
+          account: 1234567890
 
     steps:
       - name: "Mostrar saludo"
@@ -18,4 +18,4 @@ jobs:
         run:  | #Multiples lineas
           echo "Valor de $plataform"
           echo "Región :$region"
-          echo "Account :$accont"
+          echo "Account :$account"
