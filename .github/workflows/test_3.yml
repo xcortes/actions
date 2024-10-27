@@ -13,9 +13,12 @@ jobs:
     - name: Test_Variable
       #run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno,Contexto (GitHub Actions)
       #run: echo "Valor de la variable es :${{ env.MY_VAR }}" #Variable del shell (ejecutor)
-      env:
-        STEP_MY_VAR: Nivel Step
-      run: echo "Valor variable a $STEP_MY_VAR"
+      #1env: Se comentarea para ejercicio llaado de vairable de repositorio #1
+        #1STEP_MY_VAR: Nivel Step
+      #1run: echo "Valor variable a $STEP_MY_VAR"
+      run: echo "Valor variable entorno repositorio ${{MY_VARIABLE_2}}"
+
+
 
 
 
