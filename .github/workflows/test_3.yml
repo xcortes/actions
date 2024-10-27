@@ -13,7 +13,8 @@ jobs:
 
     steps: 
     - name: Test_Variable
-      run: echo "El Valor de la variable de entorno Repo ${{ vars.MY_VARIABLE_2 }}"
+      #run: echo "El Valor de la variable de entorno Repo ${{ vars.MY_VARIABLE_2 }}"
+      run: echo "El valor de la variable de entorno Repo es:$env_var"
       
       #run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno,Contexto (GitHub Actions)
       #run: echo "Valor de la variable es :${{ env.MY_VAR }}" #Variable del shell (ejecutor)
