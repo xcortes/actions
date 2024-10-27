@@ -1,7 +1,6 @@
 name: Llamado variable de entorno 
 
-on:
-  [push]
+on: [push]
 
 jobs:
   hi-varentor:
