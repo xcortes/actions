@@ -17,8 +17,8 @@ jobs:
         #1STEP_MY_VAR: Nivel Step
       #1run: echo "Valor variable a $STEP_MY_VAR"
       #run: echo "Valor variable entorno repo ${{ vars.MY_VARIABLE_2 }}" tst basico
-      run: echi "valor variable de entonrno repo ${{ vars.ENV_CONTEXT_VAR }}"
-      
+      run: echo "valor variable de entonrno repo ${{ vars.ENV_CONTEXT_VAR }}"
+
 
 
 
