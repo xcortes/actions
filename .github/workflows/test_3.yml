@@ -16,7 +16,7 @@ jobs:
       #1env: Se comentarea para ejercicio llaado de vairable de repositorio #1
         #1STEP_MY_VAR: Nivel Step
       #1run: echo "Valor variable a $STEP_MY_VAR"
-      run: echo "Valor variable entorno repositorio ${{MY_VARIABLE_2}}"
+      run: echo "Valor variable entorno repositorio ${{vars.MY_VARIABLE_2}}"
 
 
 
