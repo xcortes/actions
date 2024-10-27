@@ -14,8 +14,11 @@ jobs:
       - name: "Mostrar saludo"
         run: echo "Hola Mundo desde LLamado de variable de entorn"
       
-      - name: "Mostrando varianles de entorno"
+      - name: "Mostrando varbles de entorno"
         run:  | #Multiples lineas
-          echo "Valor de $plataform"
-          echo "Región :$region"
-          echo "Account :$account"
+          #echo "Valor de $plataform"
+          echo "Valor de ${{ env.plataform }}"
+          #echo "Región :$region"
+          echo "Región :${{ env.region }}"
+          #echo "Account :$account"
+          echo "Account :${{ env.account}}"        
