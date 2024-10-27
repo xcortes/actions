@@ -1,6 +1,7 @@
 name: Ejemplo2 de Composite Actions
 
-on: [push]
+on: #[push]
+  workflow_dispatch:
 
 jobs:
   say-hello: 

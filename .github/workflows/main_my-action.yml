@@ -1,6 +1,7 @@
 name: Test compositive Actions
 
-on: [push]
+on: #[push]
+  workflow_dispatch:
 
 jobs:
   local-action: 
