@@ -7,9 +7,15 @@ jobs:
     runs-on: ubuntu-latest 
 
     env:
-      MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests
+      MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests ,variable de entorno inyectada
 
     steps: 
     - name: Test_Variable
-      run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno,Contexto (GitHub Actions)
+      #run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno,Contexto (GitHub Actions)
       #run: echo "Valor de la variable es :${{ env.MY_VAR }}" #Variable del shell (ejecutor)
+      env:
+        STEP_MY_VAR: Nivel Step
+      run: echo "Valor variable a $STEP_MY_VAR"
+
+
+
