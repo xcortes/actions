@@ -1,7 +1,7 @@
 name: Hola MUNDO2
 
 on:
-  push:
+  #push:
     workflow_dispatch:
     #branch: #Defino que este workflow se ejecute en esta lista de branch
      # - main

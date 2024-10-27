@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Llamado de variables:
+      - name: Llamado de variables
       run: echo "Hola Mundo desde LLamado de variable de entorn"
