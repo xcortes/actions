@@ -6,12 +6,13 @@ jobs:
   hi-variablee:
     runs-on: ubuntu-latest 
 
-    env:
-      MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests ,variable de entorno inyectada
+    #env:
+      #MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests ,variable de entorno inyectada
 
     steps: 
     - name: Test_Variable
-      run: echo "El Valor de la variable de entorno Repo ${{ env.MY_VARIABLE_2 }}"
+      run: echo "El Valor de la variable de entorno Repo ${{ vars.MY_VARIABLE_2 }}"
+      
       #run: echo "El Valor es:$MY_VAR" # Accede correctamente a la variable de entorno,Contexto (GitHub Actions)
       #run: echo "Valor de la variable es :${{ env.MY_VAR }}" #Variable del shell (ejecutor)
       #1env: Se comentarea para ejercicio llaado de vairable de repositorio #1
