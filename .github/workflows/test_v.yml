@@ -5,7 +5,17 @@ on: [push]
 jobs:
   hi-varentor:
     runs-on: ubuntu-latest
+    env: #Varialesd entorno 
+          plataform: AWS
+          region: us-east-1
+          accout: 1234567890
 
     steps:
       - name: "Mostrar saludo"
         run: echo "Hola Mundo desde LLamado de variable de entorn"
+      
+      - name: "Mostrando varianles de entorno"
+        run:  | #Multiples lineas
+          echo "Valor de $plataform"
+          echo "Región :$region"
+          echo "Account :$accont"
