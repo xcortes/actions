@@ -10,7 +10,7 @@ jobs:
     #env:
       #MY_VAR: 'Mi variable de entorno' #Se inyectan directamente en el servidor ubuntu-latests ,variable de entorno inyectada
     env:
-      env_var: ${{ vars.MY_VARIABLE_2 }}  
+      env_var: ${{ vars.  }}  
 
     steps: 
     - name: Test_Variable

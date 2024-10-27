@@ -9,6 +9,8 @@ jobs:
           plataform: AWS
           region: us-east-1
           account: 1234567890
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}          
 
     steps:
       - name: "Mostrar saludo"
@@ -21,4 +23,8 @@ jobs:
           #echo "Región :$region"
           echo "Región :${{ env.region }}"
           #echo "Account :$account"
-          echo "Account :${{ env.account}}"        
+          echo "Account :${{ env.account}}"    
+          
+          echo "Este es el valor de username :${{ secrets.USERNAME }}"
+          echo "Este es el valor de password :${{ secrets.PASSWORD }}"
+          
