@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Mstrar saldo"
+      - name: "Mostrar saludo"
         run: echo "Hola Mundo desde LLamado de variable de entorn"
