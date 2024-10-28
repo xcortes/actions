@@ -1,7 +1,7 @@
 name: Variables de entorno
 
 on: #[push]
-  workflow_dispatch:
+   workflow_dispatch:
 
 jobs:
   hi-variablee:

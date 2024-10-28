@@ -1,7 +1,9 @@
 name: Hola Mundo #Nombre de workflow
 
-on: #[push] #Evento, se hace push a un al repo
-  workflow_dispatch:
+on:
+  workflow_dispatch: 
+  #[push] #Evento, se hace push a un al repo
+  
 
 jobs: #Ejecuta dentro de un servidor
   hola: 
