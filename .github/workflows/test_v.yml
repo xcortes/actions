@@ -1,6 +1,8 @@
 name: Llamado variable de entorno 
 
-on: [push]
+on: 
+  workflow_dispatch:
+   #[push]
 
 jobs:
   hi-varentor:
