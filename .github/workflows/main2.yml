@@ -1,0 +1,23 @@
+name: Test Composite Actions - Main2
+
+on: [push]
+
+jobs:
+ local-cions:
+  runs-on: ubuntu-latest
+
+  steps:
+   #- name: Ls
+     #run: ${{ secrets.SSH_KEY }} #Con este tipo de variables ssh se debe dar un format ,como primer paso en el servidor
+     # Donde se corren s crea unuevo directorio. 
+    - name: Ls - Crear directorio
+      run: | # Crear un nuevo direcctorio mkdir -p ~ubica en la ruta hom, creando una carpeta .ssh
+        mkdir -p ~/.ssh 
+        echo ${{ secrets.SSH_KEY }} >> ~/.ssh/id_rsa
+        chmod 699 ~/.ssh/id_rsa
+        ssh-keyscan -H 127.0.1.1 >> ~/.ssh/known_hosts
+
+        cat ~/.ssh/known_hosts
+
+
+    
