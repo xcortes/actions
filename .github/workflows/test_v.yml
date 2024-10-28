@@ -33,5 +33,5 @@ jobs:
       
       - name: "Mostrar viriables de Repo"
         run: |
-          echo "Variable de Repo Project_version:${{ vars.PROJECT_VERSION }}"
+          echo "Variable de Repo Project_version :${{ vars.PROJECT_VERSION }}"
 
