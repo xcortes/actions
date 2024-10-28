@@ -9,5 +9,5 @@ jobs:
 
   steps:
     - name: Test variable de entorno
-      run: echo "Valor de la variable de entorno ${{ vars.MY_VARIABLE_2 }}"   
+      run: echo "Valor de la variable de entorno es :${{ vars.MY_VARIABLE_2 }}"   
       #Variables de contexto, para llamar las variables de entorno se da uos del ojeto vars 
