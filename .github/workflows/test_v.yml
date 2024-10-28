@@ -24,8 +24,14 @@ jobs:
           echo "Región :${{ env.region }}"
           #echo "Account :$account"
           echo "Account :${{ env.account}}"    
+      - name: "Mostrar secretos de variales Repo"
+        run: |
           echo "=== Aquí imprime los valores de los secretos de variables repos ==="
           echo "Este es el valor de username :${{ secrets.USERNAME }}"
           echo "Este es el valor de password :${{ secrets.PASSWORD }}"
           echo "===================================================================="
-          
+      
+      - name: "Mostrar viriables de Repo"
+        run: |
+          echo "Variable de Repo Project_version:${{ vars.PROJECT_VERSION }}"
+
