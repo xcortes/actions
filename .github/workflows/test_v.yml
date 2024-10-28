@@ -24,7 +24,8 @@ jobs:
           echo "Región :${{ env.region }}"
           #echo "Account :$account"
           echo "Account :${{ env.account}}"    
-          
+          echo "=== Aquí imprime los valores de los secretos de variables repos ==="
           echo "Este es el valor de username :${{ secrets.USERNAME }}"
           echo "Este es el valor de password :${{ secrets.PASSWORD }}"
+          echo "===================================================================="
           
