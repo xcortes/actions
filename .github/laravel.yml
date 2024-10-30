@@ -26,4 +26,4 @@ jobs:
       extentions: mbstring, bcmatch, pdo, pdo_mysql #La versioon viene con PHP, conposer: el cual se debe instalar
 
    - name: Install Packages compposite 
-     uses: composer install --no-interaction #Al descargar no requiera ninguna interacción.
+     run: composer install --no-interaction #Al descargar no requiera ninguna interacción.
