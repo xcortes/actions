@@ -1,7 +1,7 @@
 name: Variable de entorno 
 
 on: 
-    [push]
+    #[push]
 
 jobs:
  hi-variables:
