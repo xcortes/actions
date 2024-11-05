@@ -8,12 +8,12 @@ jobs:
 
     services:
       mysql:
-        #image: mysql:8.0
-        #ports:
-          #- 3006:3006 
-        #env:
-        #MYSQL_ROOT_PASSWORD: root
-        #MYSQL_DATABASE: laravel
+        image: mysql:8.0
+        ports:
+          - 3006:3006 
+        env:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: laravel
 
    steps:
    - name: Checkout 
