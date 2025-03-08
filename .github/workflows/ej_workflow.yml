@@ -6,6 +6,7 @@ on:
     #branches: [ main ]
 
 jobs:
+  Ej Flujo de trabajo: #Nombre del Job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -19,4 +20,4 @@ jobs:
         run: ls -l ${{env.GITHUB_WORKSPACE }}
         #shell: bash  # Especifica el shell
       - name: Imprimir el Shell
-        run: echo  "El Sehll es:$SHELL"
+        run: echo "El Shel es:$SHELL"
