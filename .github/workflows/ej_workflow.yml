@@ -1,9 +1,12 @@
 name: ej_workflow.yml
 #Ejemplo de flujo de trabajo
 on:
+
+  push:
+    branches: [ghtest]
+  
   workflow_dispatch:
-  #push:
-    #branches: [ main ]
+
 
 jobs:
    Flujodework:
@@ -20,3 +23,6 @@ jobs:
         #shell: bash  # Especifica el shell
       - name: Imprimir el Shell
         run: echo "El Shel es:$SHELL"
+      
+      - name: Another Script
+        run: echo Hello from Another Script
