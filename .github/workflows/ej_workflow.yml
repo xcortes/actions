@@ -1,4 +1,5 @@
-name: Ejemplo de flujo de trabajo
+name: ej_workflow.yml
+#Ejemplo de flujo de trabajo
 on:
   workflow_dispatch:
   #push:
