@@ -17,3 +17,5 @@ jobs:
       - name: Listar el contenido del directorio
         run: ls -l ${{env.GITHUB_WORKSPACE }}
         #shell: bash  # Especifica el shell
+      - name: Imprimir el Shell
+        run: echo  "El Sehll es:$HELL"
