@@ -6,8 +6,7 @@ on:
     #branches: [ main ]
 
 jobs:
-  Ej Flujo de trabajo: #Nombre del Job
-  build:
+   Flujodework:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
