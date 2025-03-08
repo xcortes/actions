@@ -3,7 +3,7 @@ name: ej_workflow.yml
 on:
 
   push:
-    branches: [ghTest]
+    branches: [ghTests]
   workflow_dispatch:
 
 
