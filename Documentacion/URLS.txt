@@ -2,4 +2,5 @@ Recursos de estudio
 - Youtube:
 1. 🐙 GitHub Actions TUTORIAL Desde Cero para Principiantes - Integración continua (CI/CD) GRATIS 🚀
     https://www.youtube.com/watch?v=Rs3SBnED5QY
+08/03/2025: Aqui se trebajo con el worfklow ej_workflow.yml
 2. 
