@@ -1,16 +1,18 @@
 name: Ejemplo de flujo de trabajo
-on: 
+on:
   push:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build:
-
     runs-om: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        
       - name: Imprimir la ruta del espacio de trabajo
         run: echo "El espacio de trabajo es:" $ {{ env.GITHUB_WORKSPACE }}"
+        #shell: bash  # Especifica el shell
       - name: Listar el contenido del directorio
-        run: ls $ {{env.GITHUB_WORKSPACE }}
+        run: ls -l $ {{env.GITHUB_WORKSPACE }}
+        #shell: bash  # Especifica el shell
