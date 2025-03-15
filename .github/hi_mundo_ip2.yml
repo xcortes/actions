@@ -1,0 +1,18 @@
+name: Hola mundo desde IP #Nombre del workflow
+
+on: push #evento que lo activará
+jobs: #Definición de los jobs
+    hola-mundo-ip: #Nombre del job
+        runs-on: ubuntu-latest #Maquina en la que correrá
+        steps: #Lista de steps del job hola-mundo-ip 
+            - name: Public IP #Nombre del step
+              id: ip #identificador usable dentro del job para otros steps
+              uses: haythem/public-ip@v1.3 #Usará el action haythem/public-ip
+            - name: Hola Mundo #Segundo step de nombre Hola mundo
+              run: echo ¡Hola Mundo dede IP ${{ steps.ip.outputs.ipv4 }}! # bash
+
+# Ejercicio clase Pplatzi, curso Curso de GitHub Actions
+# https://platzi.com/home/clases/7992-github-actions/64077-conceptos-basicos-del-flujo-de-trabajo-con-github-/
+# 3/ 18 Conceptos básicos del flujo de trabajo con GitHub Actions
+# Backing
+# Clasica
