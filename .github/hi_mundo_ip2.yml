@@ -1,6 +1,7 @@
 name: Hola mundo desde IP #Nombre del workflow
 
-on: push #evento que lo activará
+on: 
+push: #evento que lo activará
 jobs: #Definición de los jobs
     hola-mundo-ip: #Nombre del job
         runs-on: ubuntu-latest #Maquina en la que correrá
