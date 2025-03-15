@@ -1,0 +1,45 @@
+#Comentarios
+name: "The Coder Clave"
+description: ´Coding tutorials and coursers´
+autor: Ximena
+#Comenterios 
+subs: 1300
+ege: 1.9
+youtube: true #Comentarios
+
+#Se pueden crear objetos usando la identación, objeto chanels, es una entidad en si misma 
+chanels:
+  name: "The Coder Clave"
+  description: ´Coding tutorials and coursers´
+  autor: Ximena
+  #Comenterios 
+  subs: 1300
+  ege: 1.9
+  youtube: true #Comentarios
+
+
+object2:
+  prop1: Test
+  prop2: 10 
+  # Propiedades diferentes
+
+  # Tambien se pueden agregar listas  
+  # Es una lista con dos elementos, Chanels pasa a ser una lista de objetos con sus propias propiedades
+chanels:
+- name: "The Coder Clave" # Listas
+  description: ´Coding tutorials and coursers´
+  autor: Ximena
+  #Comenterios 
+  subs: 1300
+  ege: 1.9
+  youtube: true #Comentarios
+- name: twitter.com:/cavecoder
+  description: ´Tech, Motivation´ .NET
+  autor: Gabriel
+  subs: 11000
+  ege: 1.2 
+  youtube: false
+
+  #Otra manera de escribir listas son los Topics
+  #https://www.youtube.com/watch?v=OybmIqMxDUc minuto 7:56 pm
+  
